@@ -1,0 +1,12 @@
+version: '3'
+
+services: 
+        cppdev:
+            container_name: cppdev
+            image: cppdev
+            restart: always
+            build: .
+            tty: true
+            working_dir: /cppdev/src
+            volumes:
+                - ./src:/cppdev/src
